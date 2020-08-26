@@ -1,6 +1,6 @@
 # Instalacion y Configuracion de Java para asdm.jnlp
 
-_Se describe el proceso utilizado para configurar Java en Linux Mint para poder utilizar el ASDM de CISCO_
+_Se describe el proceso utilizado para configurar Java en Linux Mint 20 para poder utilizar el ASDM de CISCO_
 
 ## Descargando 🚀
 
