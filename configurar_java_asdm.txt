@@ -1,0 +1,23 @@
+https://nimdati.com/2019/07/17/install-cisco-asdm-launcher-on-ubuntu/
+
+Linux: Install Cisco ASDM Launcher on Ubuntu
+JULY 17, 2019 TROUBLESHOOTER LEAVE A COMMENT
+Install Java JRE
+Download Java JRE (Linux x64): https://java.com/en/download/linux_manual.jsp and move the container to /usr/java
+
+sudo mkdir /usr/java
+sudo mv ~/Downloads/jre*.tar.gz /usr/java
+cd /usr/java
+sudo tar zxvf jre*.tar.gz
+sudo rm jre*.tar.gz
+Add the following lines to /etc/profile:
+
+sudo nano /etc/profile 
+export JAVA_HOME="/usr/java/jre1.x.x_xxx"
+export PATH=$JAVA_HOME/bin:$PATH
+[strg] + [x] [y] [Enter]
+Apply immediately
+
+source /etc/profiles (or reboot)
+Install ASDM
+javaws https://ipaddress:port/admin/public/asdm.jnlp
